@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results - Quiz Management System</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">QuizSystem</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="result.html">My Results</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="alert-box"></div>
+    <div class="card" id="result-detail" style="display:none;">
+      <h2>Quiz Result</h2>
+      <div id="result-content"></div>
+      <div class="mt-20">
+        <a href="dashboard.html" class="btn btn-primary">Back to Dashboard</a>
+        <a href="result.html" class="btn btn-warning">View All Results</a>
+      </div>
+    </div>
+    <div class="card" id="results-list">
+      <h2>My Previous Results</h2>
+      <div id="history-content">Loading...</div>
+    </div>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/result.js"></script>
+</body>
+</html>

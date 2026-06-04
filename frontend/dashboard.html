@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Quiz Management System</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">QuizSystem</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="result.html">My Results</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="alert-box"></div>
+    <div class="card">
+      <h2>Available Quizzes</h2>
+      <p>Select a quiz to start testing your knowledge!</p>
+      <div class="quiz-grid" id="quiz-list">Loading quizzes...</div>
+    </div>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
